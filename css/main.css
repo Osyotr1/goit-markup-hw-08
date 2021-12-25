@@ -78,6 +78,11 @@ img {
   max-width: 480px;
 }
 
+.section {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
 .header {
   position: relative;
   border-bottom: 1px solid #ECECEC;
@@ -322,6 +327,10 @@ img {
   color: #757575;
 }
 
+.work {
+  display: none;
+}
+
 .work__title {
   font-weight: bold;
   font-size: 36px;
@@ -360,10 +369,12 @@ img {
 }
 
 .team__label {
+  display: block;
   text-align: center;
+  margin-bottom: 30px;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #212121;
 }
@@ -375,6 +386,7 @@ img {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-bottom: 10px;
 }
 
 .team__text {
@@ -384,6 +396,7 @@ img {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-bottom: 16px;
 }
 
 .team__box {
@@ -396,6 +409,22 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team__icons {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team__item-icons {
+  max-width: 44px;
+  height: 44px;
+}
+
+.team__item-icons + .team__item-icons {
+  margin-left: 10px;
 }
 
 .team__social-link {

@@ -3,11 +3,12 @@
 }
 
 .team__label {
+    display: block;
     text-align: center;
-    // margin-bottom: 50px;
+    margin-bottom: 30px;
     font-weight: bold;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: $second-title-color;
 }
@@ -19,7 +20,7 @@
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: $third-title-color;
-    // margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .team__text {
@@ -29,7 +30,7 @@
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: $main-text-color;
-    // margin-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .team__box {
@@ -48,22 +49,24 @@
 // }
 
 // .team__list {
-//     display: flex;
+   
 // }
 
-// .team__icons {
-//     display: flex;
-//     justify-content: center;
-// }
+.team__icons {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-// .team__item-icons {
-//     width: 44px;
-//     height: 44px;
+.team__item-icons {
+    max-width: 44px;
+    height: 44px;
 
-//     & + & {
-//     margin-left: 10px;
-// }
-// }
+    & + & {
+    margin-left: 10px;
+}
+}
 
 
 

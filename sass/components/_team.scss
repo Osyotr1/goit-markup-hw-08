@@ -53,10 +53,8 @@
 // }
 
 .team__icons {
-    display: block;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .team__item-icons {

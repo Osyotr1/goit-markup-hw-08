@@ -1,20 +1,13 @@
-.modal__check{
+.modal__agreement {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71px;
-    letter-spacing: 0.03em;
-    color: #757575;
+    flex-wrap: wrap;
 }
 
 .modal__check-box {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 4px 2px 3px 3px;
     margin-right: 7px;
     margin-bottom: 2px;
@@ -33,12 +26,27 @@
     border: none;
 }
 
-.modal__agree {
+.modal__check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71px;
+    font-size: 12px;
+    line-height: 1.16px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.modal__agree {
+    flex-wrap: wrap;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.16px;
     letter-spacing: 0.03em;
     color: #2196F3;
 }
@@ -49,7 +57,6 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
-    margin-bottom: 40px;
     align-items: center;
     justify-content: center;
     width: 200px;

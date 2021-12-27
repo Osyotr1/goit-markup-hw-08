@@ -1,21 +1,29 @@
-.port {
+.portfolio {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+.port {
+    // display: flex;
+    // flex-wrap: wrap;
     margin-top: 50px;
 }
 
 .port__item {
-    margin-right: 30px;
-    margin-bottom: 30px;
-    width: 370px;
-
-    &:nth-last-child(-n + 3) {
-    margin-bottom: 0;
+    // margin-right: 30px;
+    max-width: 450px;
+    &:not(:last-child) {
+        margin-bottom: 30px;
     }
 
-    &:nth-child(3n) {
-    margin-right: 0;
-    }
+    // &:nth-last-child(-n + 3) {
+    // margin-bottom: 0;
+    // }
+
+    // &:nth-child(3n) {
+    // margin-right: 0;
+    // }
 }
 
 
@@ -23,8 +31,9 @@
     display: block;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
+    
+    &:focus,
+    &:active {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
 }
@@ -32,19 +41,22 @@
 
 .port__overlay {
     position: relative;
-    width: 370px;
-    height: 294px;
+    width: 100%;
     overflow: hidden;
 }
 
 
 .port__text {
     position: absolute;
+    display: flex;
+    align-items: center;
+    overflow-y: scroll;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 63px 24px;
+    padding-left: 24px;
+    padding-right: 24px;
     
     font-family: Roboto;
     font-style: normal;
@@ -58,9 +70,15 @@
     transform: translateY(101%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .port__link:hover &,
-    .port__link:focus & {
+    .port__link:focus,
+    .port__link:active & {
     transform: translateY(0);
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 330px) {
+    .port__text {
+        font-size: 16px;
     }
 }
 

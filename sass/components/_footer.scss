@@ -1,29 +1,25 @@
 .footer {
+    display: block;
     background-color: $footer-bg-color;
     padding-top: 60px;
     padding-bottom: 60px;
+    text-align: center;
+}
+
+.footer__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-family: Raleway, sans-serif;   
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: $footer-logo-color;
 }
 
 .footer__label {
     color: $studio-footer-color;
-}
-
-// .address {
-//     display: flex;
-//     align-items: baseline;
-//     justify-content: space-between;
-// }
-
-.footer__logo {
-    display: inline-block;
-    // margin-bottom: 20px;
-    font-family: Raleway, sans-serif;   
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: $footer-logo-color;
 }
 
 .address__link {
@@ -46,9 +42,9 @@
 .address__item {
     display: block;
 
-    // &:not(:last-child) {
-    // margin-bottom: 9px;
-    // }
+    &:not(:last-child) {
+    margin-bottom: 9px;
+    }
 }
 
  

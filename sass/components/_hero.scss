@@ -1,7 +1,7 @@
 .hero__title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -11,9 +11,9 @@
 .hero {
     background-color: $hero-bg-color;
     min-width: 320px;
-    height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     margin-left: auto;
     margin-right: auto;
     background: #C4C4C4;
@@ -68,26 +68,21 @@
 }
 
 
-
-
-
-
 .hero__box {
     display: block;
-    // width: 696px;
-    min-height: 120px;
+    max-width: 360px;
     margin-left: auto;
     margin-right: auto;
-    // margin-bottom: 30px;
+    margin-bottom: 30px;
 
 }
 
 .hero__button {
     @extend %button;
-    // display: flex;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
-    // min-width: 200px;
+    min-width: 200px;
     border-radius: 4px;
     padding: 10px 32px;
     font-family: Roboto, sans-serif;

@@ -1,11 +1,11 @@
-.specials {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
+// .specials {
+// //     padding-top: 60px;
+// //     padding-bottom: 60px;
+// // }
 
-// .specials__list {
-//     display: flex;
-// }
+.specials__list {
+    @extend %section-list
+}
 
 .specials__box {
     background-color: #F5F4FA;
@@ -18,15 +18,22 @@
     // display: flex;
     // align-items: center;
     // justify-content: center;
+
 }
 
-// .specials__item {
-//     max-width: 270px;
+.specials__item {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    flex-basis: calc(100% / 2 - 30px);
+   
+    @media screen and (min-width: 768px) {
+        max-width: 354px;
+    }
 
-//     &:not(:last-child) {
-//     margin-right: 30px;
-//     }
-// }
+    // &:not(:last-child) {
+    // margin-right: 30px;
+    // }
+}
 
 
 

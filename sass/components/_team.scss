@@ -2,6 +2,10 @@
     background-color: #F5F4FA;
 }
 
+.team__list {
+    @extend %section-list
+}
+
 .team__label {
     display: block;
     text-align: center;

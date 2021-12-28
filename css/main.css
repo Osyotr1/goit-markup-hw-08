@@ -47,6 +47,19 @@ img {
   color: #2196F3;
 }
 
+@media screen and (min-width: 768px) {
+  .current::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+    bottom: -34px;
+    background-color: #2196F3;
+    border-radius: 2px;
+  }
+}
+
 .hero__button, .submit-box__button, .modal__submit {
   color: #ffffff;
   background-color: #2196F3;
@@ -76,6 +89,16 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.specials__list, .team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -84,14 +107,52 @@ img {
   max-width: 480px;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
 .section {
   padding-bottom: 60px;
   padding-top: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .header {
   position: relative;
   border-bottom: 1px solid #ECECEC;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+
+.header__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header__logo {
@@ -102,16 +163,88 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196F3;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .header__label {
   color: #212121;
 }
 
+.header__item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header-hide {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header-hide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.header__link {
+  position: relative;
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__link:hover, .header__link:focus, .header__link:active {
+  color: #2196F3;
+}
+
+.header__link.current {
+  color: #2196F3;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contacts__item + .contacts__item {
+  margin-top: 10px;
+}
+
+.contact {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: #757575;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact:hover, .contact:focus, .contact:active {
+  color: #2196F3;
+  fill: #2196F3;
+}
+
+.contacts__icon {
+  margin-right: 10px;
 }
 
 .header__btn-menu {
@@ -127,12 +260,18 @@ img {
   fill: #2196F3;
 }
 
+@media screen and (min-width: 768px) {
+  .header__btn-menu {
+    display: none;
+  }
+}
+
 .menu {
   position: fixed;
   background-color: #ffffff;
   top: 0;
   left: 0;
-  width: 100vw;
+  min-width: 100vw;
   min-height: 100vh;
   z-index: 5;
   padding: 48px 40px;
@@ -363,11 +502,6 @@ img {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.specials {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 .specials__box {
   background-color: #F5F4FA;
   border-radius: 4px;
@@ -376,6 +510,19 @@ img {
   max-width: 450px;
   height: 120px;
   text-align: center;
+}
+
+.specials__item {
+  margin-left: 30px;
+  margin-bottom: 30px;
+  -ms-flex-preferred-size: calc(100% / 2 - 30px);
+      flex-basis: calc(100% / 2 - 30px);
+}
+
+@media screen and (min-width: 768px) {
+  .specials__item {
+    max-width: 354px;
+  }
 }
 
 .specials__title {

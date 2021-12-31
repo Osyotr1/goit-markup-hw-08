@@ -93,3 +93,9 @@ img {
 
     // }
 }
+
+%section-item-2l {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    flex-basis: calc(100% / 2 - 30px);
+}

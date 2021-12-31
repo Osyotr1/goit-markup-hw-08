@@ -89,16 +89,6 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.specials__list, .team__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-left: -30px;
-  margin-bottom: -30px;
-}
-
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -128,6 +118,8 @@ img {
 .header {
   position: relative;
   border-bottom: 1px solid #ECECEC;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -250,7 +242,7 @@ img {
 .header__btn-menu {
   display: block;
   margin-top: 10px;
-  top: -13px;
+  top: 4px;
   right: 10px;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -502,6 +494,22 @@ img {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.specials__list {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .specials__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
+}
+
 .specials__box {
   background-color: #F5F4FA;
   border-radius: 4px;
@@ -512,16 +520,13 @@ img {
   text-align: center;
 }
 
-.specials__item {
-  margin-left: 30px;
-  margin-bottom: 30px;
-  -ms-flex-preferred-size: calc(100% / 2 - 30px);
-      flex-basis: calc(100% / 2 - 30px);
-}
-
 @media screen and (min-width: 768px) {
   .specials__item {
     max-width: 354px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
   }
 }
 
@@ -584,6 +589,22 @@ img {
   background-color: #F5F4FA;
 }
 
+.team__list {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
+}
+
 .team__label {
   display: block;
   text-align: center;
@@ -627,8 +648,13 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .team__item {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
+  }
 }
 
 .team__icons {
@@ -689,6 +715,7 @@ img {
 }
 
 .clients__list {
+  display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -705,6 +732,13 @@ img {
   margin-bottom: 30px;
   -ms-flex-preferred-size: calc(100% / 2 - 30px);
       flex-basis: calc(100% / 2 - 30px);
+}
+
+@media screen and (min-width: 768px) {
+  .clients__item {
+    -ms-flex-preferred-size: calc(100% / 3 - 30px);
+        flex-basis: calc(100% / 3 - 30px);
+  }
 }
 
 .clients__social-link {
@@ -762,6 +796,16 @@ img {
   margin-top: -15px;
 }
 
+@media screen and (min-width: 768px) {
+  .filter__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .filter__item {
   margin-top: 15px;
 }
@@ -802,12 +846,35 @@ img {
   margin-top: 50px;
 }
 
+@media screen and (min-width: 768px) {
+  .port {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
+}
+
 .port__item {
   max-width: 450px;
+  margin-bottom: 30px;
 }
 
 .port__item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .port__item {
+    max-width: 354px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
+  }
 }
 
 .port__link {
@@ -821,6 +888,19 @@ img {
 .port__link:focus, .port__link:active {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+  .port__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
 }
 
 .port__overlay {
@@ -881,6 +961,14 @@ img {
   border-top: none;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+  .box-content {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+
 .box-content__title {
   margin-bottom: 4px;
   font-weight: bold;
@@ -904,6 +992,25 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
+}
+
+.in-line {
+  display: block;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .in-line {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .footer__logo {
@@ -950,6 +1057,10 @@ img {
   font-family: inherit;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  letter-spacing: 0.03em;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -961,6 +1072,12 @@ img {
 .join {
   margin-top: 60px;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .join {
+    margin: 0;
+  }
 }
 
 .join__title {
@@ -1126,6 +1243,12 @@ img {
           align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 768px) {
+  .submit-box__mail {
+    width: 450px;
+  }
 }
 
 .submit-box__button {

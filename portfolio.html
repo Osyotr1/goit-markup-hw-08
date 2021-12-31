@@ -17,7 +17,9 @@
 <body class="body">
         <header class="header">
             <div class="container header__main">
-                <P lang="en"><a class="link header__logo" href="">Web<span class="header__label">Studio</span></a></P>
+                <div>
+                    <P lang="en"><a class="link header__logo" href="">Web<span class="header__label">Studio</span></a></P>
+                </div>
                 <div class="header-hide">
                     <nav>
                         <ul class="list header__links">
@@ -28,6 +30,8 @@
                             <li class="header__item"><a class="link header__link" href="#contacts">Контакты</a></li>
                         </ul>
                     </nav>
+                </div>
+                <div class="header-hide">
                     <ul class="list contacts">
                         <li class="contacts__item">
                             <a class="link contact" href="mailto:info@devstudio.com">
@@ -45,6 +49,7 @@
                         </li>
                     </ul>
                 </div>
+        
                 <button type="button" class="header__btn-menu open-menu-btn">
                     <svg width="24" height="16" aria-label="Кнопка мобильного меню">
                         <use class="header__menu-open" href="images/icons.svg#menu-open"></use>
@@ -397,8 +402,9 @@
     </main>
 
     <footer class="footer">
-        <div class="container address">
-            <div>
+        <div class="container ">
+            <div class="in-line">
+            <div class="address">
                 <p lang="en"><a class="link footer__logo" href="">Web<span class="footer__label">Studio</span></a></p>
                 <address>
                     <ul class="list">
@@ -445,6 +451,8 @@
                     </li>
                 </ul>
             </div>
+            </div>
+
             <div class="submit-box">
                 <h3 class="submit-box__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
                 <div class="submit-box__box">

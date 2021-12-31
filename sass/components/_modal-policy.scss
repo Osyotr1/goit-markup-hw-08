@@ -38,6 +38,11 @@
     line-height: 1.16px;
     letter-spacing: 0.03em;
     color: #757575;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .modal__agree {

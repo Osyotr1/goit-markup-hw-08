@@ -1534,6 +1534,12 @@ img {
   overflow-y: scroll;
 }
 
+@media screen and (min-width: 1200px) {
+  .backdrop {
+    overflow-y: hidden;
+  }
+}
+
 .modal {
   max-width: 450px;
   min-height: 609px;

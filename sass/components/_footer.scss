@@ -4,18 +4,29 @@
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
-}
 
-.in-line {
-    display: block;
-    width: 100%;
-    margin-bottom: 60px;
-    @media screen and (min-width: 768px) and (max-width: 1199.5px) {
-        display: inline-flex;
-        align-items: flex-start;
-        justify-content: space-around;
+    @media screen and (min-width: 1200px) {
+        text-align: start;
     }
 }
+
+.address {
+
+    @media screen and (min-width: 768px) and (max-width: 1199.5px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    }
+}
+
 
 .footer__logo {
     display: inline-block;

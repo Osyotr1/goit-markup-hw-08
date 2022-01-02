@@ -104,6 +104,7 @@
             <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
         </section>
 
+        <div class="specials">
         <section class="section"> 
             <div class="container">
                 <h2 class="visually-hidden">Особенности</h2>
@@ -146,7 +147,8 @@
                     </li>
                 </ul>
             </div>
-        </section>    
+        </section>  
+        </div>
 
         <section class="section work">
             <div class="container">
@@ -154,15 +156,39 @@
                 <div class="work__pictures">
                     <ul class="list work__list">
                         <li class="work__item">
-                            <img src="./images/about-img1.jpg" width="370" height="294" alt="Сотрудник пишет код">
+                            <picture>
+                                <source srcset="
+                                ./images/about/about1.jpg 1x,
+                                ./images/about/about1-2x.jpg 2x
+                                "
+                                media="(min-width: 1200px)"
+                                >
+                            <img src="./images/about/about1-2x.jpg" width="370" height="294" alt="Сотрудник пишет код">
+                            </picture>
                             <p class="work__text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
                         </li>
                         <li class="work__item">
-                            <img src="./images/about-img2.jpg" width="370" height="294" alt="Смотрит в телефон">
+                            <picture>
+                                <source srcset="
+                                    ./images/about/about2.jpg 1x,
+                                    ./images/about/about2-2x.jpg 2x
+                                    " 
+                                    media="(min-width: 1200px)"
+                                    >
+                                <img src="./images/about/about2-2x.jpg" width="370" height="294" alt="Смотрит в телефон">
+                            </picture>
                             <p class="work__text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
                         </li>
                         <li class="work__item">
-                            <img src="./images/about-img3.jpg" width="370" height="294" alt="Делает дизайн на планшете">
+                            <picture>
+                                <source srcset="
+                                    ./images/about/about3.jpg 1x,
+                                    ./images/about/about3-2x.jpg 2x
+                                    " 
+                                    media="(min-width: 1200px)"
+                                    >
+                                <img src="./images/about/about3-2x.jpg" width="370" height="294" alt="Делает дизайн на планшете">
+                            </picture>
                             <p class="work__text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
                         </li>
                     </ul>

@@ -15,10 +15,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    // @media screen and (min-width: 1200px) {
-    //     justify-content: flex-start;
-    // }
 }
 
 .header__links {
@@ -38,8 +34,6 @@
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: $header-logo-color;
-    // margin-top: 10px;
-    // margin-bottom: 10px;
 
     @media screen and (min-width: 1200px) {
         font-size: 26px;
@@ -68,8 +62,6 @@
     display: block;
     font-weight: 500;
     font-size: 14px;
-    // padding-top: 32px;
-    // padding-bottom: 32px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: $header-link-color;
@@ -155,9 +147,3 @@
         display: none;
     }
 }
-
-
-
-// -------------------------------mob menu -------------------------------------------------------//
-
-

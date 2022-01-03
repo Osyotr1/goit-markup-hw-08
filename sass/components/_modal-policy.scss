@@ -22,7 +22,7 @@
 }
 
 .modal__policy:checked + .modal__check .modal__check-box {
-    background-color: #2196F3;
+    background-color: $button-bg-color;
     border: none;
 }
 
@@ -37,7 +37,7 @@
     font-size: 12px;
     line-height: 1.16px;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: $main-text-color;
 
     @media screen and (min-width: 1200px) {
         font-size: 14px;
@@ -53,7 +53,7 @@
     font-size: 12px;
     line-height: 1.16px;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: $pseudo-class-color;
 }
 
 .modal__submit {
@@ -78,8 +78,8 @@
     &:hover,
     &:focus,
     &:active {
-        color: #ffffff;
-        background-color:#188CE8;
+        color: $filter-btn-bg;
+        background-color: $button-bg-color;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
 }

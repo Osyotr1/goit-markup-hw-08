@@ -17,11 +17,6 @@
     }
 }
 
-.menu__container {
-    position: relative;
-}
-
-
 .menu__btn {
     @extend %mobile-btn;
     display: block;

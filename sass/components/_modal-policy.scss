@@ -1,6 +1,11 @@
 .modal__agreement {
     display: flex;
     flex-wrap: wrap;
+
+    @media screen and (min-width: 1200px) {
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 .modal__check-box {
@@ -54,6 +59,11 @@
     line-height: 1.16px;
     letter-spacing: 0.03em;
     color: $pseudo-class-color;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .modal__submit {
